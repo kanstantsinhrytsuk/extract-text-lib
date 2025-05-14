@@ -1,0 +1,28 @@
+{
+  "name": "extract-text-lib",
+  "version": "0.0.1",
+  "packageManager": "yarn@4.3.1",
+  "tsup": {
+    "entry": [
+      "src/index.ts"
+    ],
+    "splitting": false,
+    "sourcemap": true,
+    "clean": true
+  },
+  "scripts": {
+    "build": "tsup",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "vitest run",
+    "test:watch": "vitest watch"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.18",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.3"
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts"
+}
